@@ -1,5 +1,6 @@
 const Alert = ({ status, message }) => {
-    // The alert componanet takes two props : the status which could be 'info, success, warning or danger' and the message which could be a simple text/string
+    // The alert componanet takes two props : the status which could be 'info, success, warning or danger' 
+    // and the message which could be a simple text/string
     return (
         <>
             <div className={`alert alert-${status} alert-dismissible fade show`} role="alert">
@@ -10,4 +11,4 @@ const Alert = ({ status, message }) => {
     )
 }
 
-export default Alert
+export default Alert;

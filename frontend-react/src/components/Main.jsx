@@ -7,7 +7,7 @@ const Main = () => {
     return (
         <>
             <div className='container'>
-                
+
                 <div className="p-5 text-center text-white bg-light-dark rounded mt-3">
                     <h1>Stock Prediction Portal</h1>
                     <p className="text-light lead">
@@ -16,13 +16,13 @@ const Main = () => {
                     </p>
 
                     {
-                    isLoggedIn ? (<button className='btn btn-info'>Get Started</button>) : (
-                        <>
-                           <Button buttonText='Login' buttonStyle='btn-info' buttonLink='/login' />
-                        </>
-                    )
-                }
-                    
+                        isLoggedIn ? (<Button buttonText='Explore Now' buttonStyle='btn-info' buttonLink='/dashboard' />) : (
+                            <>
+                                <Button buttonText='Login' buttonStyle='btn-info' buttonLink='/login' />
+                            </>
+                        )
+                    }
+
                 </div>
             </div>
         </>

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import Alert from './Alert';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faSpinner } from '@fortawesome/free-solid-svg-icons'
+import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 
 
 const Register = () => {
@@ -26,8 +26,8 @@ const Register = () => {
 
         try {
             const response = await axios.post('http://127.0.0.1:8000/api/v1/register/', userData);
-            console.log('Response Data :', response.data);
-            console.log('Response Successful !');
+            // console.log('Response Data :', response.data);
+            // console.log('Response Successful !');
             setErrors({});
             setSuccess(true);
         }
